@@ -216,7 +216,9 @@
 }
 
 
-
+.w-80 {
+    width: 80% !important;
+}
 
 
 
