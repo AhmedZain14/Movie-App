@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- pop up -->
+    <!-- <div id="welcomePopUp" class="popup-overlay">
+        <div class="popup-content text-center">
+            <h2 class="mb-3">Thanks for everything</h2>
+            <h3 class="name-text">Ms. Samar</h3>
+            <h3 class="name-text">Mr. Khalid</h3>
+            <button id="closePopUp" class="btn btn-outline-danger mt-4 px-5">OK</button>
+        </div>
+    </div> -->
+
+    <!-- sidebar -->
+    <div class="side-nav d-flex" id="side-nav">
+        <div class="sliding-menu shadow d-flex flex-column justify-content-between" id="slidingMenu">
+            <ul class="list-unstyled p-4">
+                <li class="mb-4"><a href="#" id="nowPlaying">Now Playing</a></li>
+                <li class="mb-4"><a href="#" id="popular">Popular</a></li>
+                <li class="mb-4"><a href="#" id="topRated">Top Rated</a></li>
+                <li class="mb-4"><a href="#" id="upcoming">Upcoming</a></li>
+                <li class="mb-4"><a href="#contact" id="contactLink">Contact Us</a></li>
+            </ul>
+
+            <div class="bar-foot">
+                <div class="social-icons d-flex text-white justify-content-evenly">
+                    <i class="fa-brands fa-facebook-f mb-3 d-block"></i>
+                    <i class="fa-brands fa-twitter d-block"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <p class="copyright text-white">Copyright Â© 2019 All Rights</p>
+            </div>
+        </div>
+
+        <div
+            class="fixed-icons  d-flex flex-column justify-content-between align-items-center py-4 bg-white text-dark shadow-sm">
+            <div class="logo text-center h-50">
+                <img src="./images/logo.png" alt="logo" />
+            </div>
+
+            <div class="menu-icons d-flex flex-column gap-4 ">
+                <i class="fas fa-align-justify fs-4 cursor-pointer" id="toggleBtn"></i>
+                <i class="fas fa-globe fs-4 "></i>
+                <i class="fas fa-share-nodes fs-4 "></i>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- top inputs -->
+
+    <div class="container my-5 pt-5">
+        <div class="row g-4">
+            <div class="col-md-6 m-auto ">
+                <input type="text" class="form-control custom-input" id="searchByWord"
+                    placeholder="get movies by word..">
+            </div>
+
+            <!-- <div class="col-md-6">
+                <input type="text" class="form-control custom-input" id="searchGeneral" placeholder="search...">
+            </div> -->
+        </div>
+    </div>
+
+
+    <!-- cards  -->
+    <div class="container my-5 px-5">
+        <div class="row g-4" id="movieContainer">
+            <!-- <div class="col-md-4">
+                <div class="movie-card position-relative overflow-hidden rounded-3">
+                    <img src="./images/nh43XSQegiFELtR1CyGHeqPMXBA.webp" class="w-100" alt="movie">
+
+                    <div class="movie-overlay d-flex align-items-center p-3">
+                        <div class="movie-info text-center w-100">
+                            <h2 class="h3 mb-3">The Wrecking Crew</h2>
+                            <p>Estranged half-brothers Jonny and James reunite after their father's mysterious death...
+                            </p>
+                            <p class="my-2">Rate: <span class="text-warning">6.5</span></p>
+                            <p class="small">2026-01-28</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <!-- bottom inputs -->
+
+    <div class="container px-5">
+        <section id="contact" class="container my-5 py-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col-12">
+                    <h2 class="text-white mb-5 text-start">Contact Us....</h2>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-2 g-4">
+                <div class="col">
+                    <input type="text" class="form-control movie-input" placeholder="Enter Your Name">
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control movie-input" placeholder="Enter Your Email">
+                </div>
+                <div class="col">
+                    <input type="tel" class="form-control movie-input" placeholder="Enter Phone">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control movie-input" placeholder="Enter Age">
+                </div>
+                <div class="col">
+                    <input type="password" class="form-control movie-input" placeholder="Enter Password">
+                </div>
+                <div class="col">
+                    <input type="password" id="rePasswordInput" class="form-control movie-input"
+                        placeholder="Enter RePassword">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12 text-start">
+                    <button class="btn btn-outline-danger px-4 py-2 " id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- to top button -->
+    <div id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
